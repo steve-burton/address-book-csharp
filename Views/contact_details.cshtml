@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <link href="../Content/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../Content/styles.css" rel="stylesheet" type="text/css">
+    <script src="../Content/jquery-3.1.1.js"></script>
+    <title>Address book</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Contact details.</h1>
+
+      <h3>@Model.GetName()</h3>
+      <p>@Model.GetPhone()</p>
+      <p>@Model.GetStreet()</p>
+      <p>@Model.GetCityState()</p>
+      <br>
+      <p><a href="/contact_form">Add another contact</a></p>
+      <p><a href="/view_all_contacts">View all contacts</a></p>
+    </div>
+  </body>
+</html>

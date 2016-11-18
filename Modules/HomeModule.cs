@@ -28,7 +28,11 @@ namespace AddressBook
         Contact.ClearAll();
         return View["contacts_cleared.cshtml"];
       };
-      
+      Get["/Contact/{id}"] = parameters =>
+      {
+        return View["contact_details.cshtml", Contact.Find(int.Parse(parameters.id))];
+      };
+
       //###### search ######//
       Get["/search_by_name"] = _ => {
         return View["search_by_name.cshtml"];

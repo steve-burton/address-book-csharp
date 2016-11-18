@@ -8,6 +8,24 @@
   <body>
     <div class="container">
       <h1>Address Book</h1>
+
+      @if (Model.Count == 0)
+      {
+        <p>There are no contacts in the database</p>
+      }
+      else
+      {
+        <ul>
+          @foreach (var contact in Model)
+          {
+            <li><a href="/Contact/@contact.GetID()">@cd.GetName()</a></li>
+          }
+        </ul>
+      }
+      <br>
+      <a href="/CD/new">Add new CD to Collection</a><br>
+      <p><a href="/CD/search">Search for CDs by artist</a></p>
+
       <h4><a href="/contact_form">Add a contact here.</a></h4>
       <h4><a href="/view_all_contacts">View all contacts here.</a></h4>
       <h4><a href="/search_by_name">Search contacts here.</a></h4>
