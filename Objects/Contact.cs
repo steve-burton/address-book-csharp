@@ -4,7 +4,7 @@ namespace AddressBook.Objects
 {
   public class Contact{
     private string _name;
-    private string _phone
+    private string _phone;
     private string _street;
     private string _cityState;
     private static List<Contact> _instances = new List<Contact> {};
@@ -46,7 +46,7 @@ namespace AddressBook.Objects
     {
       return _cityState;
     }
-    public void SetCityState()
+    public void SetCityState(string newCityState)
     {
       _cityState = newCityState;
     }

@@ -1,8 +1,8 @@
 <html>
   <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.1.1.js"></script>
+    <link href="../Content/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../Content/styles.css" rel="stylesheet" type="text/css">
+    <script src="../Content/jquery-3.1.1.js"></script>
     <title>Address book</title>
   </head>
   <body>
@@ -11,14 +11,14 @@
       <form action="/contact_added" method="post">
         <div class="form-group">
           <label for="new-name">Contact name:</label>
-          <input id="new-name" name="new-name" type="text">
+          <input id="new-name" name="new-name" type="text" class="form-control">
           <label for="new-phone">Contact phone:</label>
-          <input id="new-phone" name="new-phone" type="text">
+          <input id="new-phone" name="new-phone" type="text" class="form-control">
           <label for="new-address-street">Contact street:</label>
-          <input id="new-address-street" name="new-address-street" type="text">
+          <input id="new-address-street" name="new-address-street" type="text" class="form-control">
           <label for="new-city-state">Contact city, state:</label>
-          <input id="new-city-state" name="new-city-state" type="text">
-          <button type="submit">Enter</button>
+          <input id="new-city-state" name="new-city-state" type="text" class="form-control">
+          <button type="submit" class="btn btn-primary">Enter</button>
         </div>
       </form>
     </div>

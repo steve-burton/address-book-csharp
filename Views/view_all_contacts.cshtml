@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <link href="../Content/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../Content/styles.css" rel="stylesheet" type="text/css">
+    <script src="../Content/jquery-3.1.1.js"></script>
+    <title>Address book</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Address Book</h1>
+      <h4>All Contacts</h4>
+      <div>
+        @foreach(var contact in Model)
+        {
+          <p>@contact.GetName()</p>
+          <p>@contact.GetPhone()</p>
+          <p>@contact.GetStreet()</p>
+          <p>@contact.GetCityState()</p>
+        }
+      </div>
+
+      <h4><a href="/contact_form">Add another contact here.</a></h4>
+      <h4><a href="/view_all_contacts">View all contacts here.</a></h4>
+      <form action="/contacts_cleared" method="post">
+        <div class="form-group">
+          <p>To clear all contacts, click here.</p>
+          <button type="submit" name="button" class="btn btn-danger">Clear all contacts now!</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
