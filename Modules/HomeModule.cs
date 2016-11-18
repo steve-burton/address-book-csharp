@@ -18,6 +18,7 @@ namespace AddressBook
         List<Contact> allContacts = Contact.GetAll();
         return View["view_all_contacts.cshtml", allContacts];
       };
+
       Post["/contact_added"] = _ => {
         Contact newContact = new Contact (Request.Form["new-name"], Request.Form["new-phone"], Request.Form["new-address-street"], Request.Form["new-city-state"]);
         newContact.Save();
@@ -27,6 +28,17 @@ namespace AddressBook
         Contact.ClearAll();
         return View["contacts_cleared.cshtml"];
       };
+      
+      //###### search ######//
+      Get["/search_by_name"] = _ => {
+        return View["search_by_name.cshtml"];
+      };
+      Post["/Contact/search_results"] = _ => {
+        string searchContactName = Request.Form["contact-name"];
+        List<SearchContact> matchingContacts = SearchContact.GetMatchingContacts(searchContactName);
+        return View["search_results.cshtml", matchingContacts];
+      };
+      //###### search ######//
     }
   }
 }
