@@ -7,17 +7,16 @@
   </head>
   <body>
     <div class="container">
-      <h1>Address Book</h1>
+      <h1>Search contacts by name.</h1>
+      <form action="/Contact/search_results" method="post">
+        <label for="contact-name">Contact name</label>
+        <input type="text" name="contact-name">
+        <button type="submit">Search</button>
+      </form>
+      <br>
       <h4><a href="/contact_form">Add a contact here.</a></h4>
       <h4><a href="/view_all_contacts">View all contacts here.</a></h4>
-      <h4><a href="/search_by_name">Search contacts here.</a></h4>
-      <br>
-      <form action="/contacts_cleared" method="post">
-        <div class="form-group">
-          <p>To clear all contacts, click here.</p>
-          <button type="submit" name="button" class="btn btn-danger">Clear all contacts now!</button>
-        </div>
-      </form>
+      <h4><a href="/">Return to homepage.</a></h4>
     </div>
   </body>
 </html>
