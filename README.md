@@ -9,10 +9,10 @@ These are the steps I'll take to write my code:
 
 Create these HTML pages:
 
-* A landing page holding a list of contacts and a link to a page with a new contact creation form and a button to delete all contacts.
+* A landing page with links to a page to create a new contact, a link to view all contacts, and a button to delete all contacts.
 * A new contact creation page with a form to enter details.
 * A new contact page to view the contact the user just created.
-* A details page where users can view details for a contact.
+* A page where users can view all contacts.
 * A contacts cleared page to confirm that all contacts have been deleted.
 
 Create Contact class .cs page.
