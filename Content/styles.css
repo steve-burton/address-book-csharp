@@ -1,5 +1,31 @@
 body {
   background-image: url(../Content/linedpaper.jpg);
   background-size: cover;
-  padding: 10% 20% 1% 20%;
+  padding: 10% 40% 1% 18%;
+}
+
+.container {
+  width: 170%;
+  margin: 3%;
+  border-radius: 20px;
+  padding-right: 10%;
+  margin-right: 40%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+p a label {
+  font-size: 1.3em;
+}
+
+form {
+  padding-right: 10%;
+}
+
+#all-contacts p {
+  font-size: 1.3em;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: lighter;
 }
