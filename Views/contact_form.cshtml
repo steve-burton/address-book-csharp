@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <title>Address book</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Enter a new contact here</h1>
+      <form action="/contact_added" method="post">
+        <div class="form-group">
+          <label for="new-contact">Contact name:</label>
+          <input id="new-contact" name="new-contact" type="text">
+          <label for="new-phone">Contact phone:</label>
+          <input id="new-phone" name="new-phone" type="text">
+          <label for="new-address-street">Contact street:</label>
+          <input id="new-address-street" name="new-address-street" type="text">
+          <label for="new-city-state">Contact city, state:</label>
+          <input id="new-city-state" name="new-city-state" type="text">
+          <button type="submit">Enter</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

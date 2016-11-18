@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <title>Address book</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Your contacts have been cleared.</h1>
+      <h4><a href="/contact_form">Add a contact here.</a></h4>
+    </div>
+  </body>
+</html>
