@@ -29,3 +29,7 @@ h1 {
   font-size: 4em;
   font-weight: lighter;
 }
+
+h4 {
+  line-height: 130%;
+}
