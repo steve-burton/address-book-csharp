@@ -10,14 +10,17 @@
       <h1>Address Book</h1>
       <h3>All Contacts</h3>
       <div>
-        @foreach (var contact in Model)
-        {
-          <h4>@contact.GetName()</h4>
-          <p>@contact.GetPhone()</p>
-          <p>@contact.GetStreet()</p>
-          <p>@contact.GetCityState()</p>
-        }
+        <ul>
+          @foreach (var contact in Model)
+          {
+            <h4>@contact.GetName()</h4>
+            <p>@contact.GetPhone()</p>
+            <p>@contact.GetStreet()</p>
+            <p>@contact.GetCityState()</p>
+          }
+        </ul>
       </div>
+      <br>
       <h4><a href="/contact_form">Add another contact here.</a></h4>
       <h4><a href="/">Return to homepage.</a></h4>
       <br>
